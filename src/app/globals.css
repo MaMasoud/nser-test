@@ -18,9 +18,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #000;
-  min-height: 10000px;
-  
+  background: #000;  
 }
 body::after {
   content: '';
@@ -61,3 +59,23 @@ body::after {
   filter: blur(8px);
 
 } */
+
+
+
+.blur-effect-hover:hover {
+  position: relative;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.05); /* Adjust opacity as needed */
+}
+.blur-effect {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.05); /* Adjust opacity as needed */
+}
+.blur-effect:hover {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.03); /* Adjust opacity as needed */
+}
+.sidebar {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.03);
+}
