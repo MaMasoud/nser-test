@@ -5,11 +5,12 @@ import ParticleJSConfig from "./components/ParticleJSConfig";
 
 
 
+
 export default function Home() {
   return (
     <>
-      <header className="p-12 flex justify-end fixed top-0 left-0 w-full">
-        <button><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <header className="p-6 flex justify-end fixed top-0 left-0 w-full z-50">
+        <button className="hover:bg-slate-900 p-4 rounded-full duration-500	"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
           <g clip-path="url(#clip0_1_10)">
             <path d="M28.4445 25.7778H3.55558C3.31983 25.7778 3.09374 25.6841 2.92704 25.5174C2.76034 25.3507 2.66669 25.1246 2.66669 24.8889C2.66669 24.6531 2.76034 24.427 2.92704 24.2603C3.09374 24.0936 3.31983 24 3.55558 24H28.4445C28.6802 24 28.9063 24.0936 29.073 24.2603C29.2397 24.427 29.3334 24.6531 29.3334 24.8889C29.3334 25.1246 29.2397 25.3507 29.073 25.5174C28.9063 25.6841 28.6802 25.7778 28.4445 25.7778Z" fill="white" />
             <path d="M28.4445 16.8889H3.55558C3.31983 16.8889 3.09374 16.7952 2.92704 16.6285C2.76034 16.4618 2.66669 16.2358 2.66669 16C2.66669 15.7643 2.76034 15.5382 2.92704 15.3715C3.09374 15.2048 3.31983 15.1111 3.55558 15.1111H28.4445C28.6802 15.1111 28.9063 15.2048 29.073 15.3715C29.2397 15.5382 29.3334 15.7643 29.3334 16C29.3334 16.2358 29.2397 16.4618 29.073 16.6285C28.9063 16.7952 28.6802 16.8889 28.4445 16.8889Z" fill="white" />
@@ -23,9 +24,6 @@ export default function Home() {
         </svg></button>
 
       </header>
-      <div id="particles-js"></div>
-      <ExternalScripts />
-      <ParticleJSConfig />
       
     </>
   );
