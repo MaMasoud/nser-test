@@ -12,7 +12,7 @@ export default function About() {
           <span className="text-2xl">My Skills</span>
         </div>
         <div className="skills flex gap-x-12 gap-y-8 flex-wrap items-center justify-center">
-          {skills.map((skill, index) => <a key={index} dangerouslySetInnerHTML={{ __html: skill.Image }} href={skill.link}></a>)}
+          {skills.map((skill, index) => <a key={index} dangerouslySetInnerHTML={{ __html: skill.Image }} href={skill.link} className="hover:opacity-80 duration-300"></a>)}
         </div>
       </Main>
     </>
