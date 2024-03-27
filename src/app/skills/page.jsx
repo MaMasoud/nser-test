@@ -1,4 +1,4 @@
-import MyLayout from "../myLayout";
+import MyLayout from "@/app/myLayout";
 import Main from "../components/Main";
 import { skills } from "../data";
 

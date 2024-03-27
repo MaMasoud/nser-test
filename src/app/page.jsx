@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MainCard from "./components/MainCard";
-import MyLayout from "./myLayout";
+import MyLayout from "@/app/myLayout";
 
 
 export default function Home() {
