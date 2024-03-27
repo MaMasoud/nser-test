@@ -1,8 +1,10 @@
+import MyLayout from "../myLayout";
 
 export default function About() {
   return (
-    <div>
+    <>
+      <MyLayout />
       about layout
-    </div>
+    </>
   )
 }
