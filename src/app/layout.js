@@ -1,14 +1,16 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 import Hotjar from '@hotjar/browser';
+import Head from "next/head";
 
 const siteId = 3921916;
 const hotjarVersion = 6;
 
 Hotjar.init(siteId, hotjarVersion);
 
-const roboto = Roboto({ subsets: ["latin"], weight: ['400']});
+const roboto = Roboto({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -18,6 +20,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3921916,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+          }}
+        />
+      </Head>
       <body className={roboto.className}>{children}</body>
     </html>
   );
