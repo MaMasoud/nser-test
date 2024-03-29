@@ -3,6 +3,8 @@
 
 import React from 'react'
 import { useState } from "react";
+import AnimatedCursor from "react-animated-cursor"
+
 
 
 import Header from './Header'
@@ -13,6 +15,12 @@ export default function MyLayout() {
 
   return (
     <>
+      <AnimatedCursor innerSize={8}
+        outerSize={50}
+        color='255, 255, 255'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5} />
       <Header setSideOpen={setSideOpen} />
       <Sidebar setSideOpen={setSideOpen} sideOpen={sideOpen} />
       <div className="absolute left-5 top-2/4 -translate-y-2/4 bg-white/5 py-8 px-4 flex flex-col gap-12 rounded-lg blur-effect duration-500">

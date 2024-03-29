@@ -8,7 +8,7 @@ export default function About() {
       <MyLayout />
       <Main className='container gap-20 flex-col'>
         <div className="profile flex flex-col items-center gap-5 ">
-          <img src="photo.png" className="w-24" alt="" />
+          <img src="skills.jpeg" className="w-36 rounded-full" alt="" />
           <span className="text-2xl">My Skills</span>
         </div>
         <div className="skills flex gap-x-12 gap-y-8 flex-wrap items-center justify-center">

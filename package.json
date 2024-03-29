@@ -11,9 +11,11 @@
   "dependencies": {
     "@hotjar/browser": "^1.0.9",
     "framer-motion": "^11.0.20",
+    "kursor": "^0.1.6",
     "next": "14.1.4",
     "particles.js": "^2.0.0",
     "react": "^18",
+    "react-animated-cursor": "^2.11.2",
     "react-dom": "^18",
     "stats.js": "^0.17.0"
   },
