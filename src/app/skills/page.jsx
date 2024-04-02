@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       <MyLayout />
-      <Main className=' gap-20 flex-col my-32 w-4/5 max-w-7xl mx-28 sm:mx-5'>
+      <Main className=' gap-20 flex-col my-32 w-4/5 max-w-7xl mx-28 sm:mx-5 sm:p-2'>
         <div className="profile flex flex-col items-center gap-5">
           <img src="skills.jpeg" className="w-36 rounded-full " alt="" />
           <span className="text-2xl">My Skills</span>
